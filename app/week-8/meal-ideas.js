@@ -19,7 +19,7 @@ export default function MealIdeas({ ingredient }) {
     };
 
     const loadMealIdeas = async () => {
-        setError(null); // Clear previous errors
+        setError(null);
         if (ingredient) {
             const fetchedMeals = await fetchMealIdeas(ingredient);
             setMeals(fetchedMeals);
